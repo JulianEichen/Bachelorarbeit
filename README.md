@@ -26,6 +26,22 @@ Falls man eine Partition mit $p > 2$ sucht, verwendet man in der Regel rekursive
 
 ### Beispiele
 
+<div>
+  <p>Graph</p>
+  <img src="https://github.com/JulianEichen/BA_KL/blob/main/pictures/graph.png" width=75% height=75%>
+  <p>Ungerichteter Graph mit Knoten $v_1, ..., v_{10}$ und Kanten mit Gewicht $1$.</p>
+</div>
+
+<img src="https://github.com/JulianEichen/BA_KL/blob/main/pictures/cut.png" width=75% height=75%>
+
+Wir sehen die folgenden Partionen: <br>
+$$V_1 = \\{ v_1 , v_4 , v_5 , v_9 , v_{10} \\}$$
+$$V_2 = \\{ v_2 , v_3 , v_6 , v_7 , v_8 \\}$$
+Welche einen Schnitt der Größe $5$ induzieren.
+
+
+<img src="https://github.com/JulianEichen/BA_KL/blob/main/pictures/mincut.png" width=75% height=75%>
+
 
 ## Fill-In
 ## Kernighan-Lin
