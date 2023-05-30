@@ -18,6 +18,7 @@ Für einen ungerichteten Graphen kann man sie wie folgt formulieren:
 > - $|V_l|$ ist gleich groß für $l = 1,$ $...$ $p$
 > - $|S|$ ist minimal für den induzierten Schnitt $S$
 
+Falls man eine Partition mit $p > 2$ sucht, verwendet man in der Regel rekursive Bisektion. Das heißt im Allgemeinen genügt es Heuristiken zu betrachten, die eine Partition mit $p = 2$ erzeugen.
 
 ## Fill-In
 ## Kernighan-Lin
