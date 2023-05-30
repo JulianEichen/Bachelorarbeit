@@ -1,2 +1,2 @@
-# Repo für Kolloqiumspräsentation & Code
+# Kolloqiumspräsentation & Code
 
