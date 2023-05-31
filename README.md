@@ -1,6 +1,6 @@
 # Graphpartitionierung: Implementierung und Vergleich des Kernighan-Lin-Algorithmus und eines Multilevel-Ansatzes
 
-[Präsentation](koll.pdf)
+Dieses Repo dient der Kurzvorstellung meiner BA, im Sinne des Kolloquiums. Da der Code nicht bewertet wurde, wird dieser hier auch nicht vorgestellt, ist jedoch Teil des Repos. Die README.md entspricht zum Großteil der [Präsentation](koll.pdf), die Grafiken wurden jedoch leicht überarbeitet.
 
 ## Motivation
 
