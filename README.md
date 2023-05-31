@@ -1,4 +1,4 @@
-# Kolloqiumspräsentation & Code
+# Graphpartitionierung: Implementierung und Vergleich des Kernighan-Lin-Algorithmus und eines Multilevel-Ansatzes
 
 [Präsentation](koll.pdf)
 
@@ -81,9 +81,33 @@ beachten:
 
 <img src="https://github.com/JulianEichen/BA_KL/blob/main/pictures/cut_cost.png" width=75% height=75%>
 
-- $E_{\nu} (v_1) = 2$ $I_{\nu} (v_1) = 0$ 
-- $E_{\nu} (v_4) = 3$ $I_{\nu} (v_4) = 2$ 
-- $E_{\nu} (v_5) = 0$ $I_{\nu} (v_5) = 1$ 
+- $E_{\nu} (v_1) = 2$, $I_{\nu} (v_1) = 0$ 
+- $E_{\nu} (v_4) = 3$, $I_{\nu} (v_4) = 2$ 
+- $E_{\nu} (v_5) = 0$, $I_{\nu} (v_5) = 1$ 
 
 
 ## Multilevel
+
+Der Multilevel-Ansatz ist ein Prinzip zur Partitionierung von sehr großen Graphen.<br>
+Er besteht aus drei Teilen:
+1. Vergröberung
+2. Partitionierung
+3. Verfeinerung
+
+Für die einzelnen Teile gibt es jeweils verschiedene Möglichkeiten der Umsetzung.
+
+### Vergröberung
+
+Man nutzt ein [Matching](https://de.wikipedia.org/wiki/Matching_(Graphentheorie)) im Graphen als grundlegende Struktur. Dabei werden die Knotenpaare und die verbindenden Kante zu einem Knoten zusammengefasst. Die Nachbarschaftsbeziehungen der beiden Knoten werden vereinigt und auf den neuen Knoten übertragen.
+
+### Beispiel
+
+<img src="https://github.com/JulianEichen/BA_KL/blob/main/pictures/match.png" width=50% height=50%>
+
+Matching im Ursprungsgraphen
+<br>
+
+<img src="https://github.com/JulianEichen/BA_KL/blob/main/pictures/match_coarse.png" width=50% height=50%>
+
+Graph nach einer Vergröberung
+<br>
