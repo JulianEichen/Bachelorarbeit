@@ -77,4 +77,13 @@ beachten:
 - Innere Kosten: $I_{\nu} (a) = \sum_{e=\\{a,a'\\}\in E} w(e), a,a' \in A$
 - mit $G = (V,E)$ ein Graph und $A,B \subset V$ eine Partitionierung von G
 
+### Beispiel
+
+<img src="https://github.com/JulianEichen/BA_KL/blob/main/pictures/cut_cost.png" width=75% height=75%>
+
+- $E_{\nu} (v_1) = 2$ $I_{\nu} (v_1) = 0$ 
+- $E_{\nu} (v_4) = 3$ $I_{\nu} (v_4) = 2$ 
+- $E_{\nu} (v_5) = 0$ $I_{\nu} (v_5) = 1$ 
+
+
 ## Multilevel
