@@ -102,12 +102,52 @@ Man nutzt ein [Matching](https://de.wikipedia.org/wiki/Matching_(Graphentheorie)
 
 ### Beispiel
 
-<img src="https://github.com/JulianEichen/BA_KL/blob/main/pictures/match.png" width=50% height=50%>
+<img src="https://github.com/JulianEichen/BA_KL/blob/main/pictures/multi_match.png" width=50% height=50%>
 
 Matching im Ursprungsgraphen
 <br>
+<br>
 
-<img src="https://github.com/JulianEichen/BA_KL/blob/main/pictures/match_coarse.png" width=50% height=50%>
+<img src="https://github.com/JulianEichen/BA_KL/blob/main/pictures/multi_coarse.png" width=50% height=50%>
 
 Graph nach einer Vergröberung
+<br>
+<br>
+
+### Partitionierung
+
+Die initiale Partitionierung wird auf dem gröbsten und damit kleinsten Graphen bestimmt. Aufgrund der geringen Anzahl an Knoten kann grundsätzlich ein beliebiger Algorithmus benutzt werden. Da die Qualität der Partition jedoch den weiteren Verlauf der Multilevelpartitionierung beeinflusst sollte diese möglichst optimal sein. Zum Beispiel bieten sich spektrale Bisektion oder Kernghan-Lin angewandt auf eine zufällige gewählte Partitionierung an.
+
+### Beispiel
+
+<img src="https://github.com/JulianEichen/BA_KL/blob/main/pictures/multi_coarse_part.png" width=50% height=50%>
+
+Partionierung des gröbsten Graphen
+<br>
+<br>
+
+### Verfeinerung
+
+Die Verfeinerung ist Projektion der initialen Partitionierung auf den Ursprungsgraphen und besteht für jede Vergröberungsstufe wiederum aus zwei Teilen:
+<ol>
+  <li>Projektion der Partitionierung auf den nächst feineren Graphen:</li>
+  <li><ul>
+    <li>Jeder Knoten wird wieder in seine Ursprungsknoten zerlegt</li>
+    <li>Ursprüngliche Nachbarschaftsbeziehungen werden wiederhergestellt</li>
+  </ul></li>
+  <li>Optimierung der projizierten Partitionierung. Zum Beispiel durch Kernighan-Lin</li>
+</ol>
+
+### Beispiel
+
+<img src="https://github.com/JulianEichen/BA_KL/blob/main/pictures/multi_proj1.png" width=50% height=50%>
+
+Projektion der Partitionierung auf den Ursprungsgraphen
+<br>
+<br>
+
+<img src="https://github.com/JulianEichen/BA_KL/blob/main/pictures/multi_proj2.png" width=50% height=50%>
+
+Ursprungsgraph mit optimierter Partitionierung
+<br>
 <br>
