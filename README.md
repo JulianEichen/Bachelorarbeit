@@ -62,4 +62,19 @@ Um den Fill-In zu verringern kann wie folgt vorgegangen werden:
 - Ordne die Zeilen bzw. Spalten von $A$ entsprechend an.
 
 ## Kernighan-Lin
+
+Beim Kernighan-Lin-Algorithmus wird versucht eine initiale, zum Beispiel zufällige, Partitionierung zu verbesseren, das heißt man minimiert den induzierten Schnitt. Erreicht wird dies durch Tauschen von Knoten zwischen den Partitionen. Da das Finden einer optimalen Auswahl NP-schwer ist, beschränkt man sich auf ein lokales Optimum.<br>
+Dabei wird in zwei Schleifen gearbeitet:
+1. Äussere Schleife: Prüft ob die innere Schleife eine Verbesserung
+erzeugt und läuft solange diese ein Verbesserung erzeugt.
+2. Innere Schleife: Tauscht Knotenmengen, jeder Knoten darf
+dabei maximal einmal getauscht werden.
+
+Bei den Schleifen ergeben sich viele Möglichkeiten zur Modifikation. Beispielsweise bewegt man immer nur den besten Knoten aus der größeren Partition in die kleinere.<br>
+Bei der Auswahl der Knoten sind vor allem zwei Größen zu
+beachten:
+- Äußere Kosten: $E_{\nu} (a) = \sum_{e=\\{a,b\\}\in E} w(e), a \in A, b \in B$
+- Innere Kosten: $I_{\nu} (a) = \sum_{e=\\{a,a'\\}\in E} w(e), a,a' \in A$
+- mit $G = (V,E)$ ein Graph und $A,B \subset V$ eine Partitionierung von G
+
 ## Multilevel
